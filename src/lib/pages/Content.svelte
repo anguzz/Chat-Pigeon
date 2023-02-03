@@ -8,10 +8,10 @@
 </script>
 
 
-<Page id="content" title=" " {backgroundClass}>
+<Page id="content">
   <Text>
    
-
+ 
   </Text>
 </Page>
 
