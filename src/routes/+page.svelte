@@ -13,6 +13,7 @@
   let neutralBackground = "bg-neutral-200 dark:bg-neutral-900";
 </script>
 
+
 <SEO
   title="site name"
   description="site desc"
@@ -22,5 +23,8 @@
 <Home />
 <!--About me/bio-->
 <Content backgroundClass={primaryBackground} />
+
+
+
 
 <Footer  />
