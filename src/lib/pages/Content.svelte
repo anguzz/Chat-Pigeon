@@ -2,7 +2,7 @@
   import Link from "$lib/components/Link.svelte";
   import Page from "$lib/components/Page.svelte";
   import Text from "$lib/components/Text.svelte";
-  import { primaryBackground } from "$lib/utils/constants";
+  export let backgroundClass:string;
 
   import { login, logout, col, addDoc, auth, onSnapshot } from "../utils/fbFunctions";
     
@@ -39,6 +39,8 @@
     }
     input = "";
     };
+
+
 </script>
 
 <div class="pb-4 px-4 text-right"> 
@@ -49,7 +51,7 @@
 
 </div>
 
-<Page id="content">
+<Page id="content" title=" " {backgroundClass} >
   <Text>
     {#each data as { message, user, time }}
     <div class="bg-slate-700 text-white py-2 px-4 rounded ">
