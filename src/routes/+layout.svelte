@@ -1,9 +1,8 @@
 <script>
   import "../app.css";
-  import Navbar from "$lib/components/Navbar.svelte";
 </script>
 
-<Navbar />
-<main class="pt-16">
+
+<main class="pt-5">
   <slot />
 </main>
