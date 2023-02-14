@@ -12,27 +12,35 @@
 
 
   onSnapshot(col, (snapshot) => {
-      let arr = [];
+      let messages = [];
       snapshot.docs.forEach((doc) => {
-        arr.push({ ...doc.data(), id: doc.id });
+        messages.push({ ...doc.data(), id: doc.id });
       });
-      data = arr.sort((a, b) => (a.time > b.time ? 1 : -1));
+      data = messages.sort((a, b) => (a.time > b.time ? 1 : -1));
     });
   
+    function IsNullOrWhiteSpace( str) {
+      return str === null || str.trim().length>0;
+
+}
+
     const add = () => {
+      if ((IsNullOrWhiteSpace(input)))
+      {
       addDoc(col, {
         message: input ? input : "",
         user: auth.currentUser ? auth.currentUser.displayName : "Anon",
         time: Date.now(),
         //avatar: user.photoURL, //add avatar here later and on data
       });
-      input = "";
-      console.log(auth);
+    }else {
+      error = "Message empty";
+    }
+    input = "";
     };
 </script>
 
-
-<div class="pb-4 px-4"> 
+<div class="pb-4 px-4 text-right"> 
 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" on:click={login}>login</button>
 
 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" on:click={logout}>logout</button>
