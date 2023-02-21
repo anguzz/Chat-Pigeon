@@ -58,7 +58,7 @@
       <div class="bg-slate-800 text-xs font-medium w-3/12 pr-12 pl-2 rounded text-right">{user}</div>
 
       <div class="msg"> {message} 
-        <div class="time">{new Date(time).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</div>
+        <div class="time">{new Date(time).toLocaleTimeString([], {year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'})}</div>
         
       </div>
       
