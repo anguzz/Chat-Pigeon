@@ -10,7 +10,7 @@
     id="bg">
     <div class="text-center">
         <h1 class="text-6xl m-6 {color} font-light">Chat Pigeon</h1>
-        <button class="bg-blue-600 hover:bg-slate-800 text-slate-800 font-bold py-2 px-4 rounded inline-flex items-center">
+        <button class="bg-blue-600 hover:bg-slate-800 text-white font-bold py-2 px-4 rounded inline-flex items-center">
             <a href="/chat" class="button">Join Chatroom</a>
           </button> 
           <br><br>
