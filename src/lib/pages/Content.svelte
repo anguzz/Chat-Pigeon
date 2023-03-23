@@ -4,13 +4,11 @@
   import Text from "$lib/components/Text.svelte";
   export let backgroundClass:string;
 
-  import { login, logout, col, addDoc, auth, onSnapshot } from "../utils/fbFunctions";
+  import { col, addDoc, auth, onSnapshot } from "../utils/fbFunctions";
     
     let data = [];
     let input;
-    let user;
-    let src = '/pigeon.png'
-
+   
 
   onSnapshot(col, (snapshot) => {
       let messages = [];
@@ -43,13 +41,7 @@
 
 </script>
 
-<div class="pb-4 px-4 text-right"> 
-<div class= "float-left pl-4 pb-0 font-bold text-xl"> Chat Pigeon </div>
-<img class= "float-left pl-2" {src} width=40 alt="bird img" />
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" on:click={login}>login</button>
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" on:click={logout}>logout</button>
 
-</div>
 
 <Page id="content" title=" " {backgroundClass} >
   <Text>
