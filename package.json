@@ -48,6 +48,7 @@
   "dependencies": {
     "firebase": "^9.17.1",
     "rxfire": "^6.0.3",
-    "rxjs": "^7.8.0"
+    "rxjs": "^7.8.0",
+    "svelte-qrcode-image": "^1.0.0-rc.2"
   }
 }
