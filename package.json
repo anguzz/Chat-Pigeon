@@ -46,6 +46,7 @@
   },
   "type": "module",
   "dependencies": {
+    "dropzone": "^6.0.0-beta.2",
     "firebase": "^9.17.1",
     "rxfire": "^6.0.3",
     "rxjs": "^7.8.0",

@@ -63,6 +63,10 @@
     <span class=brsmall></span>
     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded float-right" on:click={add}>send</button>
     <br> <br>
+
+    <a href="/files" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded float-right">files</a>
+
+    <br> <br>
   </Text>
 </Page>
 
