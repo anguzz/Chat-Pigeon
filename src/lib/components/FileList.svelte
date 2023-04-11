@@ -36,7 +36,8 @@
 </script>
 
 <Text>
-        <div class = header> ChatPigeon File sharing </div>      
+        <div class = header> ChatPigeon File sharing </div>     
+         <div> </div>
         <Upload folder="fbFiles" functionProp={() => getFileData()} />
         {#if files.fbFiles.length > 0}
           <File

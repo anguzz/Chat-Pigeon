@@ -51,7 +51,7 @@
 
 <div class = table > 
     {#each data as { name, timeCreated, size }}
-    <hr class="w-50 h-1 my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+    <hr class="w-50 h-1 my-4 bg-gray-100 border-0 rounded  dark:bg-gray-700">
     <div>
         <div class="title">{name}</div>
         
@@ -72,6 +72,10 @@
         </div>
       </div>
     {/each}
+    <br><br>
+    <hr class="w-50 h-1 my-4 bg-gray-100 border-0 rounded dark:bg-gray-700">
+    <a href="/chat" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded float-right">back to chat</a>
+      
   </div>
 <br>
 <style>
@@ -81,6 +85,7 @@
     color:rgb(255, 253, 253);
     border-radius: 10px;
     padding: 1rem;
+    padding-bottom:4rem;
     font-weight: 500;
     display: block;
     margin-left: auto;
